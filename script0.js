@@ -176,7 +176,6 @@ function calculateGPA() {
     const overallGPA = totalCredits > 0 ? (totalWeightedMarks / totalCredits) : 0;
 
     resultText += `CPGA: ${cpga.toFixed(2)}\n`;
-    resultText += `Overall GPA: ${overallGPA.toFixed(2)}`;
 
     document.getElementById('result').innerText = resultText;
 }
