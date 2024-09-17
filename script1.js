@@ -118,6 +118,7 @@ function createTable(subjects, semester) {
                         <option value="B">B</option>
                         <option value="C">C</option>
                         <option value="U">U</option>
+                        <option value="null">None</option>
                     </select>
                 </td>
             </tr>
@@ -141,25 +142,35 @@ function calculateGPA() {
         const subjects = semesterSubjects[i];
         let semesterWeightedMarks = 0;
         let semesterCredits = 0;
+        let validGrades = false;//flag to check availability in the curriculum 
         
         subjects.forEach((subject, index) => {
             const grade = document.getElementById(`grade${i}-${index + 1}`).value.toUpperCase();
+
+            //skip calculation if grade is null or empty
+            if (grade == '' || grade == 'NULL') return;
+            
             const credits = subject[2];
             const gradePoint = gradePoints[grade] || 0; // Default to 0 if grade is invalid
             
             semesterWeightedMarks += gradePoint * credits;
             semesterCredits += credits;
+            validGradeFound = true;//mark the subject is valid/available
         });
 
-        const semesterGPA = semesterCredits > 0 ? (semesterWeightedMarks / semesterCredits) : 0;
-        resultText += `GPA for Semester ${i}: ${semesterGPA.toFixed(2)}\n`;
+        if(validGradesFound){
+            const semesterGPA = semesterCredits > 0 ? (semesterWeightedMarks / semesterCredits) : 0;
+            resultText += `GPA for Semester ${i}: ${semesterGPA.toFixed(2)}\n`;
 
-        totalWeightedMarks += semesterWeightedMarks;
-        totalCredits += semesterCredits;
-        totalGPA += semesterGPA;
-        numGPAs += 1; // Count the semester GPA
+            totalWeightedMarks += semesterWeightedMarks;
+            totalCredits += semesterCredits;
+            totalGPA += semesterGPA;
+            numGPAs += 1; // Count the semester GPA
+        }
+        else{
+            resultText += 'GPA for semester ${i}: No valid grades entered\n';
+        }
     }
-    
     const cpga = numGPAs > 0 ? (totalGPA / numGPAs) : 0;
     const overallGPA = totalCredits > 0 ? (totalWeightedMarks / totalCredits) : 0;
 
