@@ -7,9 +7,11 @@ const semesterSubjects = {
         ["GE2125", "Problem Solving and Python", 3],
         ["GE2181", "Problem Solving and Python Programming Laboratory", 2],
         ["BS2182", "Physics and Chemistry Laboratory", 2]
+        ["HS2C61", "Heritage of tamils", 1]
     ],
     2: [
         ["HS2221", "Communicative English", 2],
+        ["HS2C62", "Tamil and technology", 1],
         ["MA2223", "Linear Algebra", 4],
         ["PH2221", "Quantum Physics", 3],
         ["GE2221", "Engineering Graphics", 4],
