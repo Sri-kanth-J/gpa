@@ -6,7 +6,7 @@ const semesterSubjects = {
         ["CY2124", "Engineering Chemistry", 3],
         ["GE2125", "Problem Solving and Python", 3],
         ["GE2181", "Problem Solving and Python Programming Laboratory", 2],
-        ["BS2182", "Physics and Chemistry Laboratory", 2]
+        ["BS2182", "Physics and Chemistry Laboratory", 2],
         ["HS2C61", "Heritage of tamils", 1]
     ],
     2: [
