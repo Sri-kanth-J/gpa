@@ -1,6 +1,6 @@
 const semesterSubjects = {
     1: [
-        ["HS2121", "Professional English and Functional Skills", 3],
+        ["HS2121", "Professional English and Functional Skills", 4],
         ["MA2122", "Calculus for Engineers", 3],
         ["PH2123", "Engineering Physics", 3],
         ["CY2124", "Engineering Chemistry", 3],
