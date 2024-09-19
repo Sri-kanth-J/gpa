@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Index Page</h1>
+</header>
+
+<section>
+    <h2>Profile</h2>
+    <p>I'm J Srikanth, an Student presuing Ai & Ds from psnacet. I'm excited to creating and learning new technology
+    </p>
+
+    <h2>Gpa Calculator</h2>
+    <p>
+        it performs calculation of grades of all subjects.
+        <a href="#" class="button" id="demoButton">Link</a>
+    </p>
+</section>
+
+<footer>
+    <p>&srikanth</p>
+</footer>
+
+<script>
+    document.getElementById("demoButton").addEventListener("click", function(event) {
+        event.preventDefault();
+        // Replace '#' with the URL of your demo
+        window.open("https://sri-kanth-j.github.io/gpa-calc/", "_blank");
+    });
+</script>
+
+</body>
+</html>
