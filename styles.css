@@ -2,16 +2,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
-
+ .no-margin {
+        margin: 0;
+    }
 h1 {
     color: #333;
-     margin-bottom: 0; 
 }
 h3{
     color: #333;
     width: 1000px;
     font-weight: bold;
-    margin-top: 0; 
 }
 label {
     display: inline-block;
