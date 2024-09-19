@@ -1,3 +1,14 @@
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.applicationCache) {
+        window.applicationCache.addEventListener('updateready', function() {
+            if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
+                // Swap the cache
+                window.applicationCache.swapCache();
+                // Optionally reload the page to use the new cache
+                window.location.reload();
+            }
+        }, false);
+    }
 const semesterSubjects = {
     1: [
         ["HS2121", "Professional English and Functional Skills", 4],
