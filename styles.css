@@ -2,14 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
- .no-margin {
-        margin: 0;
     }
 h1 {
     color: #333;
+    font-family: Arial, sans-serif;
 }
 h3{
-    color: #333;
+    color: #E5E4E2;
+    font-family: serif;
     width: 1000px;
     font-weight: bold;
 }
