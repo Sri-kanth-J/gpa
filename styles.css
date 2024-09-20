@@ -52,16 +52,8 @@ button:hover {
     margin-top: 0;
 }
 
-.table-container {
-    overflow-x: auto;
-}
-
-.table-container {
-        overflow-x: auto;
-    }
-    table {
-        width: 100%; 
-        border-collapse: collapse;
+table {
+   width: 80%; 
     }
     th, td {
         padding: 8px;
