@@ -2,14 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
-    }
+
 h1 {
     color: #333;
-    font-family: Arial, sans-serif;
 }
-h3{
-    color: #736F6E;
-    font-family: serif;
+
+h2{
+    color: #333;
     width: 1000px;
     font-weight: bold;
 }
@@ -52,17 +51,24 @@ button:hover {
     margin-top: 0;
 }
 
+.table-container {
+    overflow-x: auto;
+}
+
 table {
-   width: 80%; 
-    }
-    th, td {
-        padding: 8px;
-        text-align: left;
-        font-size: 14px; 
-    }
-    th {
-        background-color: #f2f2f2;
-    }
+    width: 75%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
 
 .subject-form {
     display: flex;
