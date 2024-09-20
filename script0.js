@@ -100,12 +100,11 @@ function populateSemester(semester) {
 }
 
 function createTable(subjects, semester) {
-    let tableHTML = '<table><thead><tr><th>S.No.</th><th>Code</th><th>Title</th><th>Credits</th><th>Grade</th></tr></thead><tbody>';
+    let tableHTML = '<table><thead><tr><th>Code</th><th>Title</th><th>Credits</th><th>Grade</th></tr></thead><tbody>';
     
     subjects.forEach((subject, index) => {
         tableHTML += `
             <tr>
-                <td>${index + 1}</td>
                 <td>${subject[0]}</td>
                 <td>${subject[1].length > 20 ? subject[1].substring(0, 20) + '...' : subject[1]}</td>
                 <td>${subject[2]}</td>
