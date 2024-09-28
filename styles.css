@@ -30,8 +30,8 @@ input[type="number"], input[type="text"] {
 button {
     padding: 10px 20px;
     border: none;
-    background-color: Orange;
-    color: white;
+    background-color: SteelBlue;
+    color: Snow;
     border-radius: 4px;
     cursor: pointer;
     margin: 10px 0;
