@@ -30,7 +30,7 @@ input[type="number"], input[type="text"] {
 button {
     padding: 10px 20px;
     border: none;
-    background-color: #007BFF;
+    background-color: Orange;
     color: white;
     border-radius: 4px;
     cursor: pointer;
@@ -38,7 +38,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: LightGray;
 }
 
 .semester-form {
@@ -68,7 +68,7 @@ th, td {
 }
 
 th {
-    background-color: #f4f4f4;
+    background-color: LightGray;
 }
 
 .subject-form {
