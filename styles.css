@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: White;
     margin: 20px;
+    text-align: center;
 }
 
 h1 {
@@ -57,14 +58,16 @@ button:hover {
 }
 
 table {
-    width: 75%;
+    width:100%;
+    height:50%;
     border-collapse: collapse;
+    text-align: center;
 }
 
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: left;
+    text-align: center;
 }
 
 th {
@@ -87,6 +90,7 @@ th {
 }
 
 #result {
-    margin-top: 20px;
+    margin: 20px;
     font-size: 1.2em;
+    text-align: left;
 }
