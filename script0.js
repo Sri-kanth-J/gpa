@@ -1,7 +1,7 @@
 const semesterSubjects = {
     1: [
         ["HS2121", "Professional English and Functional Skills", 4],
-        ["MA2122", "Calculus for Engineers", 3],
+        ["MA2122", "Calculus for Engineers", 4],
         ["PH2123", "Engineering Physics", 3],
         ["CY2124", "Engineering Chemistry", 3],
         ["GE2125", "Problem Solving and Python", 3],
@@ -49,7 +49,7 @@ const semesterSubjects = {
         ["AD2514", "Cloud Computing", 3],
         ["AD2515", "XML and Web Services", 3],
         ["SUBJCODE", "Professional Elective I", 3],
-        ["SUBJCODE", "Mandatory Course I & MC", 3],
+        ["SUBJCODE", "Mandatory Course I & MC", 0],
         ["AD258", "Deep Learning Laboratory", 1.5],
         ["AD2591", "Mini Project", 1.5]
     ],
