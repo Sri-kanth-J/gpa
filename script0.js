@@ -25,9 +25,9 @@ const semesterSubjects = {
         ["MA2322", "Probability and Statistics", 4],
         ["AD2311", "Object Oriented Programming", 3],
         ["AD2322", "Design and Analysis of Algorithms", 4],
-        ["AD2313", "Fundamentals of Data Science", 4],
+        ["AD2313", "Fundamentals of Data Science", 3],
         ["AD2314", "Artificial Intelligence", 3],
-        ["IT2C25", "Introduction to Operating Systems", 2],
+        ["IT2C25", "Introduction to Operating Systems", 3],
         ["AD2381", "Artificial Intelligence Laboratory", 1.5],
         ["AD2382", "Data Science Laboratory", 1.5]
     ],
