@@ -4,59 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Profile</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>GPA Calculator</title>
     <style>
         body {
-            background-color: LightGray;
-            font-family: "Poppins","sans-serif";
+            font-family: "Poppins", sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             color: #333;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
-        section {
-            margin: 20px 0;
-            background-color: LightGray;
-            padding: 20px;
-            margin: auto;
-            height: auto;
-            width: auto;
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        h1{
+            color: #FFFFFF;
         }
-        footer {
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             text-align: center;
-            margin-top: 20px;
-            color: #777;
+            max-width: 500px;
         }
-       .button {
-            background-color: white;
-            color: Grey;
+        h1 {
+            margin-bottom: 10px;
+        }
+        .button {
+            background-color: #1e3c72;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            transition: 0.3s;
         }
         .button:hover {
-            background-color: Black;
+            background-color: #2a5298;
+        }
+        footer {
+            margin-top: 20px;
             color: white;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-<p style="color: whitesmoke; background-color:#333">
-    </p><center>
     <h1>Dashboard</h1>
-    <p></p></center>
-<section style="color: #333; background-color:whitesmoke">
-    <br>
-    <h1>&emsp;Gpa Calculator</h1>
-    <p></p><h3>
-        &ensp;&ensp;it performs precise calculation of Grade Point Average(GPA) for selected semeters.<br><br>
-      &ensp;&ensp;<button><a href="https://sri-kanth-j.github.io/gpa/index1.html" "="" class="button" id="demoButton">Link</a></button><p></p></h3> <br><br><br><br><br><br><br><br><br>
-</section>
-
-<footer>
-     <center><h1>Contact</h1>
-    <h3>Mail barbarianbarrel@outlook.com</h3></center>
-    <p>Thankyou for visting the website</p>   
-</footer>
+    <div class="container">
+        <h2>GPA Calculator</h2>
+        <p>It performs precise calculation of Grade Point Average (GPA) for selected semesters.</p>
+        <a href="https://sri-kanth-j.github.io/gpa/index1.html" class="button">Go to Calculator</a>
+    </div>
+    <footer>
+        <h3>Contact</h3>
+        <p>Mail: barbarianbarrel@outlook.com</p>
+        <p>Thank you for visiting the website</p>
+    </footer>
 </body>
 </html>
