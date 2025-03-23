@@ -26,7 +26,7 @@ input[type="number"], input[type="text"] {
 
 button {
     padding: 10px 20px;
-    border: none;
+    border: black;
     background-color: lightgrey;
     color: Black;
     border-radius: 4px;
@@ -35,7 +35,7 @@ button {
 }
 
 button:hover {
-    background-color: grey;
+    background-color: lightblue;
 }
 
 .semester-form {
@@ -62,7 +62,7 @@ table {
 }
 
 th, td {
-    border: black;
+    border: 1px solid black;
     padding: 8px;
     text-align: center;
 }
