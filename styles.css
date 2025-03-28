@@ -39,6 +39,7 @@ button:hover {
 }
 
 .semester-form {
+    color:gey;
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 4px;
@@ -53,6 +54,7 @@ button:hover {
 }
 
 table {
+    color:gey;
     width:100%;
     height:50%;
     border: 1px solid black;
