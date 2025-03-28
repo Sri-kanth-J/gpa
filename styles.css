@@ -28,7 +28,7 @@ button {
     padding: 10px 20px;
     border: black;
     background-color: DarkBlue;
-    color: Black;
+    color: white;
     border-radius: 4px;
     cursor: pointer;
     margin: 10px 0;
@@ -68,6 +68,7 @@ th, td {
 }
 
 th {
+color:white;
     background-color: DarkBlue;
 }
 
