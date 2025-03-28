@@ -27,7 +27,7 @@ input[type="number"], input[type="text"] {
 button {
     padding: 10px 20px;
     border: black;
-    background-color: lightgrey;
+    background-color: lightblue;
     color: Black;
     border-radius: 4px;
     cursor: pointer;
@@ -35,7 +35,7 @@ button {
 }
 
 button:hover {
-    background-color: lightblue;
+    background-color: lightgrey;
 }
 
 .semester-form {
