@@ -27,7 +27,7 @@ input[type="number"], input[type="text"] {
 button {
     padding: 10px 20px;
     border: black;
-    background-color: lightblue;
+    background-color: DarkBlue;
     color: Black;
     border-radius: 4px;
     cursor: pointer;
@@ -68,7 +68,7 @@ th, td {
 }
 
 th {
-    background-color: lightblue;
+    background-color: DarkBlue;
 }
 
 .subject-form {
