@@ -106,7 +106,7 @@ function createTable(subjects, semester) {
         tableHTML += `
             <tr>
                 <td>${subject[0]}</td>
-                <td>${subject[1].length > 20 ? subject[1].substring(0, 20) + '...' : subject[1]}</td>
+                <td>${subject[1]}</td>
                 <td>${subject[2]}</td>
                 <td>
                     <select id="grade${semester}-${index + 1}">
