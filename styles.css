@@ -58,19 +58,37 @@ table {
     border: 1px solid black;
     background-color: white;
     border-collapse: collapse;
+    font-size: 1em;
     text-align: center;
 }
+
 
 th, td {
     border: 1px solid black;
     padding: 8px;
     text-align: center;
+    word-wrap: break-word; 
+    white-space: normal; 
+}
+
+td:nth-child(2) {
+    border: 1px solid black;
+    padding: 8px;
+    max-width: auto; 
+    overflow-y: auto; 
+    display: block; 
+    height: 50px; 
 }
 
 th {
-color:white;
+	color:white;
     background-color: royalblue;
+    white-space: nowrap;
+    padding: 10px;
+    width: auto;
+    text-align: center;
 }
+
 
 .subject-form {
     display: flex;
@@ -89,6 +107,6 @@ color:white;
 
 #result {
     margin: 20px;
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: left;
 }
