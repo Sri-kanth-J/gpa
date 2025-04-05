@@ -129,7 +129,7 @@ function calculateGPA() {
     let totalCredits = 0;
     let totalGPA = 0;
     let numGPAs = 0;
-    
+
     let resultText = '';
 
     for (let i = 1; i <= numSemesters; i++) {
@@ -164,11 +164,17 @@ function calculateGPA() {
             resultText += `GPA for Semester ${i}: No valid grades entered\n`;
         }
     }
-    
+
     const cpga = numGPAs > 0 ? (totalGPA / numGPAs) : 0;
     const overallGPA = totalCredits > 0 ? (totalWeightedMarks / totalCredits) : 0;
 
     resultText += `CPGA: ${cpga.toFixed(2)}\n`;
 
     document.getElementById('result').innerText = resultText;
+
+    // Scroll to the end of the page
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth' // Enables smooth scrolling
+    });
 }
