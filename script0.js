@@ -81,6 +81,10 @@ function generateForms() {
     const formContainer = document.getElementById('formContainer');
     formContainer.innerHTML = ''; // Clear previous forms if any
 
+    // Hide the result div
+    const resultDiv = document.getElementById('result');
+    resultDiv.style.display = 'none';
+
     for (let i = 1; i <= numSemesters; i++) {
         const semesterDiv = document.createElement('div');
         semesterDiv.classList.add('semester-form');
@@ -91,6 +95,10 @@ function generateForms() {
         // Populate subjects for the selected semester
         populateSemester(i);
     }
+
+    // Show the "Calculate CGPA" button
+    const calculateBtn = document.getElementById('calculateBtn');
+    calculateBtn.style.display = 'block';
 }
 
 function populateSemester(semester) {
@@ -122,7 +130,6 @@ function createTable(subjects, semester) {
     tableHTML += '</tbody></table>';
     return tableHTML;
 }
-
 function calculateGPA() {
     const numSemesters = parseInt(document.getElementById('numSemesters').value);
     let totalWeightedMarks = 0;
@@ -170,7 +177,11 @@ function calculateGPA() {
 
     resultText += `CPGA: ${cpga.toFixed(2)}\n`;
 
-    document.getElementById('result').innerText = resultText;
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerText = resultText;
+
+    // Display the result div
+    resultDiv.style.display = 'block';
 
     // Scroll to the end of the page
     window.scrollTo({
@@ -178,3 +189,4 @@ function calculateGPA() {
         behavior: 'smooth' // Enables smooth scrolling
     });
 }
+
