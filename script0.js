@@ -137,7 +137,7 @@ function calculateGPA() {
     let totalGPA = 0;
     let numGPAs = 0;
 
-    let resultText = '';
+    let resultText = '\n\n Result:\n  ';
 
     for (let i = 1; i <= numSemesters; i++) {
         const subjects = semesterSubjects[i];
@@ -161,21 +161,21 @@ function calculateGPA() {
 
         if (validGradesFound) {
             const semesterGPA = semesterCredits > 0 ? (semesterWeightedMarks / semesterCredits) : 0;
-            resultText += `Gradepoint average(GPA) for Sem ${i}: ${semesterGPA.toFixed(2)}\n`;
+            resultText += `\nGrade point average of Sem ${i} - ${semesterGPA.toFixed(2)}`;
 
             totalWeightedMarks += semesterWeightedMarks;
             totalCredits += semesterCredits;
             totalGPA += semesterGPA;
             numGPAs += 1; 
         } else {
-            resultText += `Gradepoint average(GPA) for Sem ${i}- Invalid\n`;
+            resultText += `\nGrade point average of Sem ${i} - Invalid`;
         }
     }
 
     const cpga = numGPAs > 0 ? (totalGPA / numGPAs) : 0;
     const overallGPA = totalCredits > 0 ? (totalWeightedMarks / totalCredits) : 0;
 
-    resultText += `\nCumulative Grade Point Average(CGPA) - ${cpga.toFixed(2)}\n`;
+    resultText += `\n\nCumulative Grade Point Average(CGPA) - ${cpga.toFixed(2)}`;
 
     const resultDiv = document.getElementById('result');
     resultDiv.innerText = resultText;
