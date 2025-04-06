@@ -161,14 +161,14 @@ function calculateGPA() {
 
         if (validGradesFound) {
             const semesterGPA = semesterCredits > 0 ? (semesterWeightedMarks / semesterCredits) : 0;
-            resultText += `GPA for Semester ${i}: ${semesterGPA.toFixed(2)}\n`;
+            resultText += `Gradepoint average(GPA) for Sem ${i}: ${semesterGPA.toFixed(2)}\n`;
 
             totalWeightedMarks += semesterWeightedMarks;
             totalCredits += semesterCredits;
             totalGPA += semesterGPA;
             numGPAs += 1; 
         } else {
-            resultText += `Grade Point Avg(GPA) for Sem${i}: Invalid\n`;
+            resultText += `Gradepoint average(GPA) for Sem ${i}- Invalid\n`;
         }
     }
 
