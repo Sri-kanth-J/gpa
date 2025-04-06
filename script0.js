@@ -166,27 +166,25 @@ function calculateGPA() {
             totalWeightedMarks += semesterWeightedMarks;
             totalCredits += semesterCredits;
             totalGPA += semesterGPA;
-            numGPAs += 1; // Count the semester GPA only if valid grades were found
+            numGPAs += 1; 
         } else {
-            resultText += `GPA for Semester ${i}: No valid grades entered\n`;
+            resultText += `Grade Point Avg(GPA) for Sem${i}: Invalid\n`;
         }
     }
 
     const cpga = numGPAs > 0 ? (totalGPA / numGPAs) : 0;
     const overallGPA = totalCredits > 0 ? (totalWeightedMarks / totalCredits) : 0;
 
-    resultText += `CPGA: ${cpga.toFixed(2)}\n`;
+    resultText += `\nCumulative Grade Point Average(CGPA) - ${cpga.toFixed(2)}\n`;
 
     const resultDiv = document.getElementById('result');
     resultDiv.innerText = resultText;
 
-    // Display the result div
     resultDiv.style.display = 'block';
 
-    // Scroll to the end of the page
     window.scrollTo({
         top: document.body.scrollHeight,
-        behavior: 'smooth' // Enables smooth scrolling
+        behavior: 'smooth' 
     });
 }
 
