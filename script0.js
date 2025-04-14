@@ -144,7 +144,7 @@ function calculateGPA() {
         numSemesters=6
     }
     
-    let resultText = '\n\n Result:\n  ';
+    let resultText = '\n\n';
 
     for (let i = 1; i <= numSemesters; i++) {
         const subjects = semesterSubjects[i];
