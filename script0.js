@@ -81,6 +81,9 @@ function generateForms() {
     const formContainer = document.getElementById('formContainer');
     formContainer.innerHTML = ''; // Clear previous forms if any
 
+    if (numSemesters>6){
+        numSemesters=6
+    }
     // Hide the result div
     const resultDiv = document.getElementById('result');
     resultDiv.style.display = 'none';
