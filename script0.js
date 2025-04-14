@@ -140,6 +140,10 @@ function calculateGPA() {
     let totalGPA = 0;
     let numGPAs = 0;
 
+     if (numSemesters>6){
+        numSemesters=6
+    }
+    
     let resultText = '\n\n Result:\n  ';
 
     for (let i = 1; i <= numSemesters; i++) {
