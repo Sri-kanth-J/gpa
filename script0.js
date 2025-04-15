@@ -145,7 +145,7 @@ function calculateGPA() {
     }
     
     let resultText = '\n\n';
-
+    resultText += '\nResult :\n';
     for (let i = 1; i <= numSemesters; i++) {
         const subjects = semesterSubjects[i];
         let semesterWeightedMarks = 0;
@@ -188,7 +188,6 @@ function calculateGPA() {
     resultDiv.innerText = resultText;
 
     resultDiv.style.display = 'block';
-
     window.scrollTo({
         top: document.body.scrollHeight,
         behavior: 'smooth' 
