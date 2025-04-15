@@ -82,7 +82,7 @@ function generateForms() {
     formContainer.innerHTML = ''; // Clear previous forms if any
 
     if (numSemesters>6){
-        numSemesters=6
+        window.location.reload();
     }
     // Hide the result div
     const resultDiv = document.getElementById('result');
