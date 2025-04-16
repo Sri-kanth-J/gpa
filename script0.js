@@ -81,7 +81,7 @@ function generateForms() {
     const formContainer = document.getElementById('formContainer');
     formContainer.innerHTML = ''; // Clear previous forms if any
 
-    if (![1, 2, 3, 4, 5, 6].includes(i)) {{
+   if (numSemesters<1 || numSemesters>6 ){
         window.location.reload();
     }
     // Hide the result div
