@@ -175,7 +175,7 @@ function calculateGPA() {
             totalGPA += semesterGPA;
             numGPAs += 1; 
         } else {
-            resultText += `Gpa of Sem ${i} - Invalid`;
+            resultText += `Gpa of Sem ${i} - Invalid<br>`;
         }
     }
 
