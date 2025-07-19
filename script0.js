@@ -145,7 +145,7 @@ function calculateGPA() {
     }
     
     let resultText = '\n\n';
-    resultText += '\nResult -\n';
+    resultText += `<h1 style="color:royalblue;">Result </h1>\n`;
     for (let i = 1; i <= numSemesters; i++) {
         const subjects = semesterSubjects[i];
         let semesterWeightedMarks = 0;
@@ -175,14 +175,14 @@ function calculateGPA() {
             totalGPA += semesterGPA;
             numGPAs += 1; 
         } else {
-            resultText += `\nGpa of Sem ${i} - Invalid`;
+            resultText += `Gpa of Sem ${i} - Invalid`;
         }
     }
 
     const cpga = numGPAs > 0 ? (totalGPA / numGPAs) : 0;
     const overallGPA = totalCredits > 0 ? (totalWeightedMarks / totalCredits) : 0;
 
-    resultText += `\n\nCGPA - ${cpga.toFixed(2)}`;
+    resultText += `\nCGPA - ${cpga.toFixed(2)}`;
 
     const resultDiv = document.getElementById('result');
     resultDiv.innerText = resultText;
