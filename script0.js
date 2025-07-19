@@ -185,7 +185,7 @@ function calculateGPA() {
     resultText += `\nCGPA - ${cpga.toFixed(2)}`;
 
     const resultDiv = document.getElementById('result');
-    resultDiv.innerText = resultText;
+    resultDiv.innerHTML = resultText;
 
     resultDiv.style.display = 'block';
     window.scrollTo({
