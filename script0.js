@@ -168,7 +168,7 @@ function calculateGPA() {
 
         if (validGradesFound) {
             const semesterGPA = semesterCredits > 0 ? (semesterWeightedMarks / semesterCredits) : 0;
-            resultText += `Gpa of Sem ${i} - ${semesterGPA.toFixed(2)}`;
+            resultText += `Gpa of Sem ${i} - ${semesterGPA.toFixed(2)}<br>`;
 
             totalWeightedMarks += semesterWeightedMarks;
             totalCredits += semesterCredits;
@@ -182,7 +182,7 @@ function calculateGPA() {
     const cpga = numGPAs > 0 ? (totalGPA / numGPAs) : 0;
     const overallGPA = totalCredits > 0 ? (totalWeightedMarks / totalCredits) : 0;
 
-    resultText += `<br>CGPA - ${cpga.toFixed(2)}`;
+    resultText += `CGPA - ${cpga.toFixed(2)}`;
 
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = resultText;
