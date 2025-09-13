@@ -21,7 +21,8 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            min-height: 100vh;
+            height: 100vh;
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -34,8 +35,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            top: -20px;
             width: 100%;
             height: 100%;
+            zoom: 90%;
         }
 
         .landing-content {
@@ -53,7 +56,8 @@
             right: 20px;
             font-size: 12px;
             text-align: right;
-}
+            width: 90%;
+            }
 
         .landing-content h2 {
             font-size: 32px;
@@ -86,19 +90,16 @@
             left: 0;
             width: 100%;
             color: #fff;
-            font-size: 14px;
+            font-size: 12px;
             background: linear-gradient(to right, lightblue, darkslategray);
             padding: 15px 20px;
             text-align: center;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
         }
-
-        @media (max-width: 480px) {
-            body {
-                padding: 10px;
+        h3 {
+            font-size: 24px;
             }
-        }
     </style>
 </head>
 <body>
@@ -110,7 +111,8 @@
     </div>
         <div class="landing-container">
             <div class="landing-content">
-                <h2>CGPA Calculator</h2>
+                <h3>CGPA Calculator</h3>
+                <br>
                 <p>It performs precise calculation of Cumulative Grade Point Average(CGPA) for selected semesters.</p>
                 <a href="index1.html">Go to calculator</a>
             </div>
