@@ -116,6 +116,10 @@ td:nth-child(2) {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        zoom: normal;
+    }
+
     table {
         font-size: 0.9em;
     }
@@ -135,5 +139,10 @@ td:nth-child(2) {
 
     button {
         width: 90%;
+    }
+
+    .table-container {
+        touch-action: pan-y pinch-zoom;
+        -webkit-overflow-scrolling: touch;
     }
 }
