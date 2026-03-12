@@ -48,20 +48,23 @@ const semesterSubjects = {
         ["AD2513", "Big Data Technologies", 3],
         ["AD2514", "Cloud Computing", 3],
         ["AD2515", "XML and Web Services", 3],
-        ["SUBJCODE", "Professional Elective I", 3],
-        ["SUBJCODE", "Mandatory Course I & MC", 0],
+        ["AD2V11", "Mobile Application Development", 3],
+        ["MX2562", "Element of Literature", 0],
         ["AD258", "Deep Learning Laboratory", 1.5],
         ["AD2591", "Mini Project", 1.5]
     ],
     6: [
         ["CS2612", "Internet of Things", 4],
         ["AD2611", "Natural Language Processing", 3],
-        ["SUBJCODE", "Professional Elective II", 3],
-        ["SUBJCODE", "Professional Elective III", 3],
-        ["SUBJCODE", "Open Elective I*", 3],
-        ["SUBJCODE", "Open Elective II*", 3],
-        ["SUBJCODE", "Mandatory Course II &", 0],
+        ["AD2V31", "Cryptography and Network Security", 3],
+        ["CS2V15", "Buisness Analytics", 3],
+        ["CB2013", "Entrepreneurship & IPR", 3],
+        ["CE2011", "Environment and social impact assesment", 3],
+        ["AD2VA1","Design thinking", 0],
+        ["ED2VA1", "Entrepreneurship Development", 0],
+        ["MX2661", "Yoga Ayurveda siddha", 0],
         ["AD2681", "Natural Language Processing Laboratory", 1.5]
+        ["CS2612", "Internet of Things Laboratory", 1.5]
     ]
 };
 
