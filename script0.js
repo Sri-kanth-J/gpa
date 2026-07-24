@@ -61,7 +61,7 @@ const semesterSubjects = {
         ["CB2013", "Entrepreneurship & IPR", 3],
         ["CE2011", "Environment and social impact assesment", 3],
         ["AD2VA1","Design thinking", 2],
-        ["ED2VA1", "Entrepreneurship Development", 0],
+        ["ED2VA1", "Entrepreneurship Development", 3],
         ["MX2661", "Yoga Ayurveda siddha", 0],
         ["AD2681", "Natural Language Processing Laboratory", 1.5]
     ]
