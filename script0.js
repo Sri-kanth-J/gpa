@@ -78,6 +78,8 @@ const gradePoints = {
 
 };
 
+let gradesTemp = [[], [], [], [], [], []];
+
 function generateForms() {
     const numSemesters = parseInt(document.getElementById('numSemesters').value);
     const formContainer = document.getElementById('formContainer');
@@ -85,11 +87,26 @@ function generateForms() {
 
    if (numSemesters<1 || numSemesters>6 ){
         window.location.reload();
+        return;
     }
-    // Hide the result div
+  
+    for (let s = 1; s <= 6; s++) {
+        const subjects = semesterSubjects[s];
+        if (!subjects) continue;
+        
+        subjects.forEach((_, idx) => {
+            const selectEl = document.getElementById(`grade${s}-${idx + 1}`);
+            if (selectEl) {
+                gradesTemp[s - 1][idx] = selectEl.value;
+            }
+        });
+    }
+    formContainer.innerHTML = ''; // Clear previous forms
+
     const resultDiv = document.getElementById('result');
     resultDiv.style.display = 'none';
 
+    // Step B: Generate forms and populate options
     for (let i = 1; i <= numSemesters; i++) {
         const semesterDiv = document.createElement('div');
         semesterDiv.classList.add('semester-form');
@@ -97,13 +114,26 @@ function generateForms() {
             <div id="subjects${i}" class="table-container"></div>`;
         formContainer.appendChild(semesterDiv);
 
-        // Populate subjects for the selected semester
         populateSemester(i);
+    }
+
+    // Step C: Restore saved values from gradesTemp array back into HTML dropdowns
+    for (let s = 1; s <= numSemesters; s++) {
+        const subjects = semesterSubjects[s];
+        if (!subjects) continue;
+
+        subjects.forEach((_, idx) => {
+            const selectEl = document.getElementById(`grade${s}-${idx + 1}`);
+            if (selectEl && gradesTemp[s - 1][idx] !== undefined) {
+                selectEl.value = gradesTemp[s - 1][idx];
+            }
+        });
     }
 
     // Show the "Calculate CGPA" button
     const calculateBtn = document.getElementById('calculateBtn');
     calculateBtn.style.display = 'block';
+    document.getElementById('clearBtn').style.display = 'inline-block';
 }
 
 function populateSemester(semester) {
@@ -122,7 +152,7 @@ function createTable(subjects, semester) {
                 <td>${subject[1]}</td>
                 <td>${subject[2]}</td>
                 <td>
-                    <select id="grade${semester}-${index + 1}">
+                    <select id="grade${semester}-${index + 1}" onchange="gradesTemp[${semester - 1}][${index}] = this.value">
                         <option value="">Select</option>
                         ${Object.keys(gradePoints).map(grade => `<option value="${grade}">${grade}</option>`).join('')}
                         <option value="null" selected>None</option>
@@ -196,3 +226,16 @@ function calculateGPA() {
     });
 }
 
+function clearData(){
+    gradesTemp=[[], [], [], [], [], []];
+    // Reset all rendered dropdowns to default "null" option
+    document.querySelectorAll('select[id^="grade"]').forEach(select => {
+        select.value = 'null';
+    });
+
+    // Hide result section
+    const resultDiv = document.getElementById('result');
+    if (resultDiv) {
+        resultDiv.style.display = 'none';
+    }
+}
