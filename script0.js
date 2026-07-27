@@ -225,7 +225,6 @@ function calculateGPA() {
         behavior: 'smooth' 
     });
 }
-
 function clearData(){
     gradesTemp=[[], [], [], [], [], []];
     // Reset all rendered dropdowns to default "null" option
