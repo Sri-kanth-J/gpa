@@ -104,6 +104,8 @@ function generateForms() {
     // Show the "Calculate CGPA" button
     const calculateBtn = document.getElementById('calculateBtn');
     calculateBtn.style.display = 'block';
+    restoreGrades();
+    attachGradeChangeListeners();
 }
 
 function populateSemester(semester) {
@@ -122,7 +124,7 @@ function createTable(subjects, semester) {
                 <td>${subject[1]}</td>
                 <td>${subject[2]}</td>
                 <td>
-                    <select id="grade${semester}-${index + 1}">
+                    <select id="grade${semester}-${index + 1}" class="grade-select">
                         <option value="">Select</option>
                         ${Object.keys(gradePoints).map(grade => `<option value="${grade}">${grade}</option>`).join('')}
                         <option value="null" selected>None</option>
@@ -193,6 +195,25 @@ function calculateGPA() {
     window.scrollTo({
         top: document.body.scrollHeight,
         behavior: 'smooth' 
+    });
+}
+
+// Save selected grade to localStorage when changed
+function attachGradeChangeListeners() {
+    document.querySelectorAll('.grade-select').forEach(select => {
+        select.addEventListener('change', (e) => {
+            localStorage.setItem(e.target.id, e.target.value);
+        });
+    });
+}
+
+// Load saved grades from localStorage back into dropdowns
+function restoreGrades() {
+    document.querySelectorAll('.grade-select').forEach(select => {
+        const savedValue = localStorage.getItem(select.id);
+        if (savedValue !== null) {
+            select.value = savedValue;
+        }
     });
 }
 
