@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator - Instructions & User Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .note {
+            background-color: #eef6fc;
+            border-left: 4px solid #3498db;
+            padding: 10px 15px;
+            margin: 15px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .grade-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        .grade-table th, .grade-table td {
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        .grade-table th {
+            background-color: #f2f2f2;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>CGPA Calculator (AI & DS - 2022 Regulation)</h1>
+    <p>A simple and effective web tool designed specifically for Artificial Intelligence and Data Science students under the 2022 regulation to track academic performance.</p>
+
+    <div class="note">
+        <strong>Live Demo:</strong> Access the calculator directly at 
+        <a href="https://sri-kanth-j.github.io/gpa" target="_blank">sri-kanth-j.github.io/gpa</a>
+    </div>
+
+    <hr>
+
+    <h2>Step-by-Step User Instructions</h2>
+    
+    <ol>
+        <li>
+            <strong>Go to the Calculator:</strong> 
+            Open <a href="https://sri-kanth-j.github.io/gpa" target="_blank">sri-kanth-j.github.io/gpa</a> on your browser.
+        </li>
+        <li>
+            <strong>Select Semesters:</strong> 
+            Choose the number of semesters you want to calculate (Semesters 1 through 6). Click <strong>Generate Forms</strong> to load your subjects.
+        </li>
+        <li>
+            <strong>Select Your Grades:</strong> 
+            The required subject codes, titles, and credit values will display automatically. Choose your earned grade (e.g., O, A+, A, B+) for each course from the drop-down menu.
+        </li>
+        <li>
+            <strong>Calculate GPA/CGPA:</strong> 
+            Click the <strong>Calculate CGPA</strong> button at the bottom to compute your semester GPA and overall cumulative performance.
+        </li>
+        <li>
+            <strong>Start Over using the Reset Button:</strong> 
+            If you want to erase all chosen grades and start fresh from the beginning, click the <strong>Clear</strong> button. This wipes away your current inputs across all semesters so you can re-enter fresh grades.
+        </li>
+    </ol>
+
+    <hr>
+
+    <h2>Qualitative Grade Interpretation</h2>
+    <p>Your calculated score maps to performance indicators as outlined below:</p>
+
+    <table class="grade-table">
+        <thead>
+            <tr>
+                <th>GPA Range</th>
+                <th>Qualitative Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>9.0 and above</td>
+                <td>Excellent</td>
+            </tr>
+            <tr>
+                <td>8.0 – 8.9</td>
+                <td>Very Good</td>
+            </tr>
+            <tr>
+                <td>7.0 – 7.9</td>
+                <td>Good</td>
+            </tr>
+            <tr>
+                <td>6.0 – 6.9</td>
+                <td>Average</td>
+            </tr>
+            <tr>
+                <td>Below 6.0</td>
+                <td>Below Average / Fail (as per institution rules)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>Features & System Notes</h2>
+    <ul>
+        <li><strong>Curriculum Auto-Loading:</strong> Pre-populates exact subject list and credit mapping for the AI & DS curriculum (2022 Regulation).</li>
+        <li><strong>Grade Preservation:</strong> Keeps your selected grades intact even if you change the total semester count or switch options while entering marks.</li>
+        <li><strong>High Accuracy:</strong> Calculation logic is verified directly against official institutional mark sheets.</li>
+    </ul>
+
+    <div class="note">
+        <strong>Note & Limitations:</strong> Subject definitions are currently mapped for Semesters 1 through 6. Selecting an option outside this range automatically resets the page.
+    </div>
+</div>
+
+</body>
+</html>
