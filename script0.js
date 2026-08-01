@@ -214,7 +214,7 @@ function calculateGPA() {
     const cpga = numGPAs > 0 ? (totalGPA / numGPAs) : 0;
     const overallGPA = totalCredits > 0 ? (totalWeightedMarks / totalCredits) : 0;
 
-    resultText += `CGPA - ${overallGPA.toFixed(2)}`;
+    resultText += `CGPA - ${Math.round(overallGPA*100)/100}`;
 
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = resultText;
